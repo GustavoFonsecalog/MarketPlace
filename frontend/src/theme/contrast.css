@@ -1,0 +1,235 @@
+/* ===== FORÇAR CONTRASTE EM TODOS OS ELEMENTOS ===== */
+
+/* Aplicar cores de tema em TODOS os elementos da aplicação */
+#app,
+.navigation,
+.products-section,
+.product-card,
+.cart-container,
+.hero-section,
+.toast,
+.settings-modal {
+  /* Garantir que todos os elementos herdem as cores do tema */
+  color: var(--text-primary) !important;
+}
+
+/* Forçar contraste em TODOS os elementos filhos */
+#app *,
+.navigation *,
+.products-section *,
+.product-card *,
+.cart-container *,
+.hero-section *,
+.toast *,
+.settings-modal * {
+  color: var(--text-primary) !important;
+}
+
+/* Elementos de texto específicos */
+h1, h2, h3, h4, h5, h6,
+p, span, div, label, strong, em, b, i,
+li, td, th, caption, legend, fieldset {
+  color: var(--text-primary) !important;
+}
+
+/* Links */
+a, a:visited, a:active {
+  color: var(--text-accent) !important;
+}
+
+a:hover {
+  color: var(--primary-hover) !important;
+}
+
+/* Botões */
+button, input[type="button"], input[type="submit"], input[type="reset"] {
+  color: var(--btn-primary-text) !important;
+  background-color: var(--btn-primary-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: var(--btn-primary-hover) !important;
+}
+
+/* Botões secundários */
+.btn-secondary, button.btn-secondary {
+  background-color: var(--btn-secondary-bg) !important;
+  color: var(--btn-secondary-text) !important;
+  border-color: var(--border-secondary) !important;
+}
+
+.btn-secondary:hover, button.btn-secondary:hover {
+  background-color: var(--btn-secondary-hover) !important;
+}
+
+/* Inputs */
+input, select, textarea {
+  color: var(--text-primary) !important;
+  background-color: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder {
+  color: var(--text-tertiary) !important;
+}
+
+/* Elementos específicos que podem ter cores hardcoded */
+.product-name, .product-price, .product-description,
+.category-name, .filter-label, .section-title,
+.nav-text, .cart-title, .modal-title {
+  color: var(--text-primary) !important;
+}
+
+/* Badges e indicadores */
+.badge, .indicator, .count, .price {
+  color: var(--text-primary) !important;
+}
+
+/* Override para elementos com cores específicas */
+.text-dark, .text-black {
+  color: var(--text-primary) !important;
+}
+
+.text-light, .text-white {
+  color: var(--text-inverse) !important;
+}
+
+/* Garantir que elementos de fundo tenham contraste */
+.bg-white {
+  background-color: var(--bg-primary) !important;
+}
+
+.bg-light, .bg-gray-100, .bg-gray-50 {
+  background-color: var(--bg-secondary) !important;
+}
+
+.bg-dark, .bg-gray-800, .bg-gray-900 {
+  background-color: var(--bg-primary) !important;
+}
+
+/* Bordas com contraste */
+.border-white, .border-light {
+  border-color: var(--border-primary) !important;
+}
+
+.border-dark, .border-gray-800 {
+  border-color: var(--border-secondary) !important;
+}
+
+/* Sombras adaptadas ao tema */
+.shadow-light {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.shadow-dark {
+  box-shadow: var(--shadow-lg) !important;
+}
+
+/* Estados específicos */
+.disabled, .muted, .secondary {
+  color: var(--text-tertiary) !important;
+}
+
+.primary, .accent, .highlight {
+  color: var(--text-accent) !important;
+}
+
+/* Forçar contraste em elementos SVG e ícones */
+svg, .icon, .svg-icon {
+  color: var(--text-primary) !important;
+  fill: var(--text-primary) !important;
+}
+
+/* Elementos de navegação */
+.nav-item, .nav-link, .dropdown-item {
+  color: var(--text-primary) !important;
+}
+
+.nav-item:hover, .nav-link:hover, .dropdown-item:hover {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Elementos de formulário */
+.form-control, .form-input, .form-select {
+  color: var(--text-primary) !important;
+  background-color: var(--input-bg) !important;
+  border-color: var(--input-border) !important;
+}
+
+/* Elementos de tabela */
+table, th, td {
+  color: var(--text-primary) !important;
+  border-color: var(--border-primary) !important;
+}
+
+/* Elementos de lista */
+ul, ol, li {
+  color: var(--text-primary) !important;
+}
+
+/* Elementos de card */
+.card, .card-body, .card-title, .card-text {
+  color: var(--text-primary) !important;
+  background-color: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+}
+
+/* Cards das categorias com contraste forçado */
+.category-card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+}
+
+.category-card * {
+  color: var(--text-primary) !important;
+}
+
+.category-name {
+  color: var(--text-primary) !important;
+}
+
+.category-description {
+  color: var(--text-secondary) !important;
+}
+
+.category-icon {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-hover) 100%) !important;
+  color: var(--text-inverse) !important;
+}
+
+/* Elementos de modal */
+.modal, .modal-header, .modal-body, .modal-footer {
+  color: var(--text-primary) !important;
+  background-color: var(--modal-bg) !important;
+  border-color: var(--border-primary) !important;
+}
+
+/* Elementos de toast */
+.toast, .toast-header, .toast-body {
+  color: var(--text-primary) !important;
+  background-color: var(--toast-bg) !important;
+  border-color: var(--toast-border) !important;
+}
+
+/* Elementos de dropdown */
+.dropdown-menu, .dropdown-item {
+  color: var(--text-primary) !important;
+  background-color: var(--dropdown-bg) !important;
+  border-color: var(--dropdown-border) !important;
+}
+
+/* Elementos de paginação */
+.pagination, .page-item, .page-link {
+  color: var(--text-primary) !important;
+  background-color: var(--filter-bg) !important;
+  border-color: var(--filter-border) !important;
+}
+
+/* Elementos de filtro */
+.filter-panel, .filter-group, .filter-control {
+  color: var(--text-primary) !important;
+  background-color: var(--filter-bg) !important;
+  border-color: var(--filter-border) !important;
+}

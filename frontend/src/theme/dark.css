@@ -1,0 +1,99 @@
+/* Tema Escuro - Dark Theme */
+
+.dark {
+  /* Cores principais */
+  --primary-color: #60a5fa;
+  --primary-hover: #3b82f6;
+  --primary-light: #1e3a8a;
+  
+  /* Cores de fundo */
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+  --bg-overlay: rgba(0, 0, 0, 0.7);
+  
+  /* Cores de texto */
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --text-inverse: #111827;
+  --text-muted: #9ca3af;
+  --text-accent: #60a5fa;
+  
+  /* Cores de borda */
+  --border-primary: #374151;
+  --border-secondary: #4b5563;
+  --border-focus: #60a5fa;
+  
+  /* Cores de estado */
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --error-color: #f87171;
+  --info-color: #60a5fa;
+  
+  /* Cores de sombra */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.5);
+  
+  /* Cores de input */
+  --input-bg: #374151;
+  --input-border: #4b5563;
+  --input-focus: #60a5fa;
+  --input-placeholder: #6b7280;
+  
+  /* Cores de card */
+  --card-bg: #1f2937;
+  --card-border: #374151;
+  --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  
+  /* Cores de navegação */
+  --nav-bg: #111827;
+  --nav-border: #374151;
+  --nav-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  
+  /* Cores de dropdown */
+  --dropdown-bg: #1f2937;
+  --dropdown-border: #374151;
+  --dropdown-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  
+  /* Cores de toast */
+  --toast-bg: #1f2937;
+  --toast-border: #374151;
+  --toast-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  
+  /* Cores de botão */
+  --btn-primary-bg: #60a5fa;
+  --btn-primary-hover: #3b82f6;
+  --btn-primary-text: #111827;
+  --btn-secondary-bg: #374151;
+  --btn-secondary-hover: #4b5563;
+  --btn-secondary-text: #f9fafb;
+  
+  /* Cores de carrinho */
+  --cart-bg: #1f2937;
+  --cart-border: #374151;
+  --cart-overlay: rgba(0, 0, 0, 0.7);
+  
+  /* Cores de produto */
+  --product-card-bg: #1f2937;
+  --product-card-border: #374151;
+  --product-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  
+  /* Cores de filtro */
+  --filter-bg: #1f2937;
+  --filter-border: #374151;
+  --filter-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  
+  /* Cores de modal */
+  --modal-bg: #1f2937;
+  --modal-overlay: rgba(0, 0, 0, 0.7);
+  --modal-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Aplicar tema escuro */
+.dark body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
