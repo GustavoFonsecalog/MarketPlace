@@ -1,4 +1,4 @@
-<img width="487" height="516" alt="image" src="https://github.com/user-attachments/assets/81761f28-57fd-451f-8755-cda042f89c76" />🛒 Shopping Cart – Fullstack Challenge
+🛒 Shopping Cart – Fullstack Challenge
 
 Simulação completa de um carrinho de compras online, desenvolvido como desafio técnico para demonstrar organização de código, boas práticas e integração frontend + backend.
 
@@ -93,30 +93,25 @@ docs: documentação do projeto e instruções de execução
 ## Funcionalidades ##
 
 Menu de Navegação: leva diretamente a listagem ja filtrada com a opção escolhida.
-<img width="409" height="335" alt="image" src="https://github.com/user-attachments/assets/cfb3194c-cb8f-475b-8c43-1c63be41bdac" />
-<img width="646" height="347" alt="image" src="https://github.com/user-attachments/assets/666430f8-58c3-43e4-83dc-bc60f1c1f73c" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/cfb3194c-cb8f-475b-8c43-1c63be41bdac" style="max-width:100%;" /> <img src="https://github.com/user-attachments/assets/666430f8-58c3-43e4-83dc-bc60f1c1f73c" style="max-width:100%;" /> </p>
 
 Filtros
-<img width="1444" height="410" alt="image" src="https://github.com/user-attachments/assets/0c37b06d-8353-4ecd-918b-7fde0771f5b3" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/0c37b06d-8353-4ecd-918b-7fde0771f5b3" style="max-width:100%;" /> </p>
 
 Modelo de visualização:
-<img width="105" height="82" alt="image" src="https://github.com/user-attachments/assets/b44f7101-8521-4f8c-b080-cfb4c397c5eb" />
-<img width="1382" height="693" alt="image" src="https://github.com/user-attachments/assets/4fb04426-d195-449a-87ba-33622069edf2" />
-<img width="1401" height="666" alt="image" src="https://github.com/user-attachments/assets/5c3da4e1-ecad-4007-8c1a-3801acff79e2" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/b44f7101-8521-4f8c-b080-cfb4c397c5eb" style="max-width:100%;" /> <img src="https://github.com/user-attachments/assets/4fb04426-d195-449a-87ba-33622069edf2" style="max-width:100%;" /> <img src="https://github.com/user-attachments/assets/5c3da4e1-ecad-4007-8c1a-3801acff79e2" style="max-width:100%;" /> </p>
 
 Menu para demais funções:
-<img width="257" height="249" alt="image" src="https://github.com/user-attachments/assets/0e1728ca-be54-487e-a617-a2400b382112" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/0e1728ca-be54-487e-a617-a2400b382112" style="max-width:100%;" /> </p>
 
 Meus pedidos: possível visualizar as compras ja finalizadas e detalhes da mesma.
-<img width="729" height="470" alt="image" src="https://github.com/user-attachments/assets/f08583c1-e364-449f-a3c3-8d5365f2c6cb" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/f08583c1-e364-449f-a3c3-8d5365f2c6cb" style="max-width:100%;" /> </p>
 
 Configurações: Limpar favoritas, tema Dark & Light, Listagem de favoritos.
-<img width="503" height="471" alt="image" src="https://github.com/user-attachments/assets/36d0b0e8-1ab6-470e-afde-fa5009e6a9d0" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/36d0b0e8-1ab6-470e-afde-fa5009e6a9d0" style="max-width:100%;" /> </p>
 
 Carrinho de compra e opões de pagamento:
-<img width="511" height="1304" alt="image" src="https://github.com/user-attachments/assets/83f54289-15ff-4ad4-91e2-8535f22d4155" />
-<img width="487" height="516" alt="image" src="https://github.com/user-attachments/assets/bb51a18f-a00e-410d-87ad-e47ed9a9b5bd" />
-<img width="579" height="186" alt="image" src="https://github.com/user-attachments/assets/deedc73a-e200-4e77-abce-67affb8f8e27" />
+<p align="center"> <img src="https://github.com/user-attachments/assets/83f54289-15ff-4ad4-91e2-8535f22d4155" style="max-width:100%;" /> <img src="https://github.com/user-attachments/assets/bb51a18f-a00e-410d-87ad-e47ed9a9b5bd" style="max-width:100%;" /> <img src="https://github.com/user-attachments/assets/deedc73a-e200-4e77-abce-67affb8f8e27" style="max-width:100%;" /> </p>
 
 
 
