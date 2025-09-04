@@ -1,140 +1,125 @@
-# Carrinho de Compras Simples
+<img width="487" height="516" alt="image" src="https://github.com/user-attachments/assets/81761f28-57fd-451f-8755-cda042f89c76" />🛒 Shopping Cart – Fullstack Challenge
 
-Projeto fullstack implementando um carrinho de compras com arquitetura limpa, persistência local e estratégias de pagamento flexíveis.
+Simulação completa de um carrinho de compras online, desenvolvido como desafio técnico para demonstrar organização de código, boas práticas e integração frontend + backend.
 
-## 🏗️ Arquitetura
+## ✨ Funcionalidades ##
 
-### Backend (PHP + Slim)
-- **Domain Layer**: Entidades e regras de negócio
-- **Application Layer**: Casos de uso e serviços
-- **Infrastructure Layer**: Implementações concretas
-- **Interface Layer**: Controllers e rotas
+Frontend (Vue.js)
 
-### Frontend (Vue 3 + Vite + TypeScript + Pinia)
-- **Components**: Interface do usuário
-- **Store**: Gerenciamento de estado com Pinia
-- **Utils**: Funções auxiliares
-- **Tests**: Testes unitários com Vitest
+Adicionar e remover produtos do carrinho
+Escolher forma de pagamento:
+Pix (desconto)
+Cartão de crédito à vista
+Cartão parcelado (com juros compostos)
+Exibir resumo da compra com valor total atualizado em tempo real
 
-## 🚀 Como Executar
+Backend (PHP – Slim Framework)
+API REST para processar o carrinho
+Aplicação de regras de negócio (descontos e juros)
+Retorno do valor final consolidado
+Testes
+Testes unitários no backend validando cálculos de desconto e juros
 
-### Backend
-```bash
-cd backend
-composer install
-composer run lint
-composer run test
-php -S localhost:8000 -t public
-```
+## 🛠️ Tecnologias ##
 
-### Frontend
-```bash
-cd frontend
+Frontend
+Vue.js 3 (Composition API)
+Axios (requisições HTTP)
+Vite (build rápido)
+TailwindCSS (estilização)
+
+Backend
+PHP 8+
+Slim Framework (API REST)
+PHPUnit (testes unitários)
+
+Geral
+Git & GitHub Flow (develop como branch principal)
+ESLint & PHP-CS-Fixer (padrões de código)
+
+## 📂 Estrutura de Pastas ##
+.
+├── backend/               # API em PHP (Slim)
+│   ├── app/               # Controllers, Models, Services
+│   ├── routes/            # Definição de rotas
+│   ├── tests/             # Testes unitários (PHPUnit)
+│   ├── composer.json
+│   └── start-server.bat   # Script para subir o servidor
+│
+├── frontend/              # Aplicação Vue.js
+│   ├── src/
+│   │   ├── assets/        # Estilos, imagens
+│   │   ├── components/    # Componentes reutilizáveis
+│   │   ├── store/         # Estado global (Vuex/Pinia)
+│   │   └── views/         # Páginas principais
+│   └── package.json
+│
+├── .gitignore
+├── README.md
+└── docker-compose.yml     # (se houver ambiente containerizado)
+
+
+## ⚙️ Como rodar o projeto ##
+
+🔹 Backend
+Dentro da pasta backend, basta rodar o script:
+.\start-server.bat
+A API ficará disponível em:
+👉 http://localhost:8000
+
+🔹 Frontend
+Dentro da pasta frontend:
 npm install
-npm run lint
-npm run test
 npm run dev
-```
+Aplicação disponível em:
+👉 http://localhost:3000
 
-## 🧪 Testes e Qualidade
+✅ Testes
+Backend
+cd backend
+./vendor/bin/phpunit
 
-### Backend
-- **Lint**: PHP_CodeSniffer (PSR-12)
-- **Tests**: PHPUnit
-- **Comando**: `composer run test`
+## 📝 Commits organizados ##
 
-### Frontend
-- **Lint**: ESLint + Prettier
-- **Tests**: Vitest
-- **Comando**: `npm run test`
+Mesmo sendo o primeiro push, os commits foram organizados por contexto para mostrar boas práticas:
+chore: configuração inicial do projeto (dependências, env, gitignore)
+feat(backend): criação da API base com rotas, models e controllers
+feat(frontend): estrutura inicial de telas e componentes de layout
+feat(frontend): lógica do carrinho, integração com API e fluxo de checkout
+test(backend): criação de testes unitários para regras de negócio do carrinho
+docs: documentação do projeto e instruções de execução
 
-## 📋 Checklist de Aceite
 
-- [x] Persistência do carrinho em localStorage (não fixo em código)
-- [x] Código modular, SRP, SOLID - padrão sênior
-- [x] Backend com Strategy Pattern e camadas bem separadas
-- [x] Testes automatizados configurados
-- [x] CI com GitHub Actions
-- [x] README completo com instruções
-- [x] Sem banco de dados (produtos fixos)
-- [x] Frontend exibe subtotal, desconto/juros, parcelas e total
-- [x] Arquitetura limpa e organizada
+## Funcionalidades ##
 
-## 🔧 Decisões Arquiteturais
+Menu de Navegação: leva diretamente a listagem ja filtrada com a opção escolhida.
+<img width="409" height="335" alt="image" src="https://github.com/user-attachments/assets/cfb3194c-cb8f-475b-8c43-1c63be41bdac" />
+<img width="646" height="347" alt="image" src="https://github.com/user-attachments/assets/666430f8-58c3-43e4-83dc-bc60f1c1f73c" />
 
-### Backend
-- **Slim Framework**: Micro-framework leve e performático
-- **Strategy Pattern**: Para diferentes métodos de pagamento
-- **Clean Architecture**: Separação clara de responsabilidades
-- **PSR-12**: Padrões de codificação PHP
+Filtros
+<img width="1444" height="410" alt="image" src="https://github.com/user-attachments/assets/0c37b06d-8353-4ecd-918b-7fde0771f5b3" />
 
-### Frontend
-- **Vue 3 Composition API**: API moderna e reativa
-- **Pinia**: Gerenciamento de estado com persistência
-- **TypeScript**: Tipagem estática para maior confiabilidade
-- **Vite**: Build tool rápido para desenvolvimento
+Modelo de visualização:
+<img width="105" height="82" alt="image" src="https://github.com/user-attachments/assets/b44f7101-8521-4f8c-b080-cfb4c397c5eb" />
+<img width="1382" height="693" alt="image" src="https://github.com/user-attachments/assets/4fb04426-d195-449a-87ba-33622069edf2" />
+<img width="1401" height="666" alt="image" src="https://github.com/user-attachments/assets/5c3da4e1-ecad-4007-8c1a-3801acff79e2" />
 
-## 📡 Endpoints
+Menu para demais funções:
+<img width="257" height="249" alt="image" src="https://github.com/user-attachments/assets/0e1728ca-be54-487e-a617-a2400b382112" />
 
-Todas as rotas expostas sob `/api` (proxy do Vite aponta para o backend em `127.0.0.1:8000`).
+Meus pedidos: possível visualizar as compras ja finalizadas e detalhes da mesma.
+<img width="729" height="470" alt="image" src="https://github.com/user-attachments/assets/f08583c1-e364-449f-a3c3-8d5365f2c6cb" />
 
-### POST /api/checkout
-Calcula o total com base na estratégia de pagamento selecionada.
+Configurações: Limpar favoritas, tema Dark & Light, Listagem de favoritos.
+<img width="503" height="471" alt="image" src="https://github.com/user-attachments/assets/36d0b0e8-1ab6-470e-afde-fa5009e6a9d0" />
 
-Aceita dois formatos de payload (compatibilidade):
+Carrinho de compra e opões de pagamento:
+<img width="511" height="1304" alt="image" src="https://github.com/user-attachments/assets/83f54289-15ff-4ad4-91e2-8535f22d4155" />
+<img width="487" height="516" alt="image" src="https://github.com/user-attachments/assets/bb51a18f-a00e-410d-87ad-e47ed9a9b5bd" />
+<img width="579" height="186" alt="image" src="https://github.com/user-attachments/assets/deedc73a-e200-4e77-abce-67affb8f8e27" />
 
-1) Formato interno
-```json
-{
-  "items": [
-    { "product_id": 1, "quantity": 2 }
-  ],
-  "payment_method": "pix|credit_card|installments",
-  "installments": 3
-}
-```
 
-2) Formato do desafio
-```json
-{
-  "produtos": [
-    { "nome": "Fone Bluetooth", "valor": 100.00, "quantidade": 2 },
-    { "nome": "Mouse Gamer", "valor": 150.00, "quantidade": 1 }
-  ],
-  "metodo_pagamento": "PIX|CARTAO_CREDITO",
-  "parcelas": 3
-}
-```
 
-**Response (exemplo):**
-```json
-{
-  "subtotal": 100.00,
-  "discount": 10.00,
-  "total": 90.00,
-  "installments": 1
-}
-```
 
-## 🧮 Regras de Pagamento
 
-- PIX: 10% de desconto
-- Cartão de Crédito (1x): 10% de desconto
-- Cartão de Crédito Parcelado (2x–12x): juros compostos de 1% a.m.
 
-Fórmula de juros compostos: \( M = P \cdot (1 + 0.01)^n \)
-
-Arredondamento: bancário (2 casas) aplicado em subtotal, desconto/juros e total.
-
-## 💾 Persistência Local
-
-O carrinho é persistido automaticamente no localStorage usando Pinia, garantindo que o estado seja mantido entre sessões e recarregamentos da página.
-
-## 🎯 Foco na Qualidade
-
-Este projeto demonstra:
-- Arquitetura limpa e bem organizada
-- Separação de responsabilidades
-- Testes automatizados
-- Padrões de codificação consistentes
-- Documentação clara e objetiva
